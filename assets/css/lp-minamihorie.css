@@ -436,12 +436,12 @@ footer .cnt p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: 80px;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.3;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 #fixed-btn .btns a br {
@@ -476,7 +476,7 @@ footer .cnt p {
 }
 
 #fixed-btn .btns a.mail {
-  background-color: #000;
+  background-color: #CAA141;
 }
 
 #fixed-btn .btns a.mail span {
