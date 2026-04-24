@@ -476,7 +476,7 @@ footer .cnt p {
 }
 
 #fixed-btn .btns a.mail {
-  background-image: linear-gradient(#ffc949, #dbb14f);
+  background-image: radial-gradient(circle farthest-side at 50% 0%, #ffe5a8, #caa141 81%);
 }
 
 #fixed-btn .btns a.mail span {
