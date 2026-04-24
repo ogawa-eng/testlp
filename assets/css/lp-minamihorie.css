@@ -472,7 +472,7 @@ footer .cnt p {
 #fixed-btn .btns a.line span::before {
   width: 32px;
   height: 1.2em;
-  background: url(../img/minamihorie/ico-line.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/ico-line.png) no-repeat center/contain;
 }
 
 #fixed-btn .btns a.mail {
@@ -485,7 +485,7 @@ footer .cnt p {
 
 #fixed-btn .btns a.mail span::before {
   width: 16px;
-  background: url(../img/minamihorie/ico-mail.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets//img/minamihorie/ico-mail.png) no-repeat center/contain;
 }
 
 @media screen and (min-width: 1280px) {
@@ -665,7 +665,7 @@ main {
 
 .sec.bgpic .ttl-back-wrap {
   padding: 65px 0;
-  background: url(../img/minamihorie/voice01.jpg) no-repeat center/cover;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/voice01.jpg) no-repeat center/cover;
 }
 
 .sec.bgpic .ttl-back-wrap .ttl-back {
@@ -681,7 +681,7 @@ main {
 }
 
 .sec.bgpic.right .ttl-back-wrap {
-  background: url(../img/minamihorie/bg-trouble.jpg) no-repeat center/cover;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-trouble.jpg) no-repeat center/cover;
 }
 
 .sec.bgpic.right .ttl-back-wrap .ttl-back {
@@ -714,7 +714,7 @@ main {
 
 @media screen and (min-width: 769px) {
   .sec.bgpic .ttl-back-wrap {
-    background: url(../img/minamihorie/voice01.webp) no-repeat center/cover;
+    background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/voice01.webp) no-repeat center/cover;
   }
   .sec.bgpic .ttl-back-wrap .ttl-back {
     width: 100%;
@@ -726,7 +726,7 @@ main {
     font-size: 3.6rem;
   }
   .sec.bgpic.right .ttl-back-wrap {
-    background: url(../img/minamihorie/bg-trouble.webp) no-repeat center/cover;
+    background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-trouble.webp) no-repeat center/cover;
   }
   .sec.bgpic.right .ttl-back-wrap .ttl-back {
     width: 100%;
@@ -809,7 +809,7 @@ mv
         height: calc(100vh - 50px);
         
         /* 削除: 既存の画像背景は不要になるため無効化 */
-        /* background:url(../img/minamihorie/bg-mv.jpg) no-repeat center/cover; */
+        /* background:url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-mv.jpg) no-repeat center/cover; */
         
         display: flex;
         justify-content: center;
@@ -897,7 +897,7 @@ mv
             padding-bottom: 4vw;
             
             /* 削除: PC時の画像背景指定も不要になるため無効化 */
-            /* background: url(../img/minamihorie/bg-mv.jpg) no-repeat center top 70% / cover; */
+            /* background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-mv.jpg) no-repeat center top 70% / cover; */
             
             .hdline-wrap {
                 .sp {
@@ -1045,7 +1045,7 @@ mv
 
 .cta {
   padding: 40px 0;
-  background: url(../img/minamihorie/bg-cpn-sec.jpg) no-repeat center/cover;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-cpn-sec.jpg) no-repeat center/cover;
 }
 
 .cta .cnt .fee {
@@ -1057,7 +1057,7 @@ mv
   content: "";
   width: 150px;
   height: 210px;
-  background: url(../img/minamihorie/club.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/club.png) no-repeat center/contain;
   position: absolute;
   right: -60px;
   bottom: -20px;
@@ -1136,7 +1136,7 @@ mv
 
 .cta .cnt .cpn .ac-btn-wrap {
   padding: 30px 5px 36px;
-  background: url(../img/minamihorie/bg-cpn.jpg) no-repeat center/cover;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-cpn.jpg) no-repeat center/cover;
   text-align: center;
 }
 
@@ -1235,7 +1235,7 @@ mv
   content: "";
   width: 14px;
   height: 10px;
-  background: url(../img/minamihorie/ico-arw-down.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/ico-arw-down.png) no-repeat center/contain;
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1583,7 +1583,7 @@ mv
 .voice .vc-list li:nth-of-type(1):before {
   width: 95px;
   height: 190px;
-  background: url(../img/minamihorie/user01.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/user01.png) no-repeat center/contain;
   position: absolute;
   left: -5px;
   top: 15px;
@@ -1592,7 +1592,7 @@ mv
 .voice .vc-list li:nth-of-type(2):before {
   width: 86px;
   height: 240px;
-  background: url(../img/minamihorie/user02.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/user02.png) no-repeat center/contain;
   position: absolute;
   right: 10px;
   top: -20px;
@@ -1601,7 +1601,7 @@ mv
 .voice .vc-list li:nth-of-type(3):before {
   width: 86px;
   height: 219px;
-  background: url(../img/minamihorie/user03.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/user03.png) no-repeat center/contain;
   position: absolute;
   left: 5px;
   top: 10px;
@@ -1610,7 +1610,7 @@ mv
 .voice .vc-list li:nth-of-type(4):before {
   width: 126px;
   height: 247px;
-  background: url(../img/minamihorie/user04.png) no-repeat center/contain;
+  background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/user04.png) no-repeat center/contain;
   position: absolute;
   right: 12px;
   top: -20px;
