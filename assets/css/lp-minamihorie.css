@@ -476,7 +476,7 @@ footer .cnt p {
 }
 
 #fixed-btn .btns a.mail {
-  background-color: #CAA141;
+  background-image: linear-gradient(#ffc949, #dbb14f);
 }
 
 #fixed-btn .btns a.mail span {
