@@ -783,215 +783,181 @@ header .hd-inr .hd-logo p {
 mv
 ===================================*/
 .mv {
-    background-color: c.$txtColor;
+    background-color: #000;
     overflow: hidden;
-    position: relative; /* 追加: 背景動画を絶対配置するための基準 */
+    position: relative;
+}
 
-    /* 追加: 背景動画のスタイル */
-    .mv-video {
-        position: absolute; /* 要素を浮かせて背面に配置 */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* 縦横比を維持して全画面を覆う */
-        z-index: 0; /* 背景として一番下に配置 */
-    }
+.mv .mv-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 
-    .bg {
-        position: relative; /* 追加: 重なり順を制御するため */
-        z-index: 1; /* 追加: 動画より上にコンテンツを表示 */
-        
-        max-width: 500px;
-        margin: 0 auto;
-        padding-top: 120px;
-        padding-bottom: 9.2vw;
-        height: calc(100vh - 50px);
-        
-        /* 削除: 既存の画像背景は不要になるため無効化 */
-        /* background:url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-mv.jpg) no-repeat center/cover; */
-        
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        .hdline-wrap {
-            .pc {
-                display: none;
-            }
-            h2 {
-                font-style: italic;
-                font-size: 8vw;
-                letter-spacing: -0.01em;
-                line-height: 1.25;
-                color:c.$whtColor;
-                transform: rotate(-12deg);
-                margin-bottom: 20px;
-            }
-            .pt-list {
+.mv .bg {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 9.2vw;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mv .bg .hdline-wrap .pc {
+    display: none;
+}
+
+.mv .bg .hdline-wrap h2 {
+    font-style: italic;
+    font-size: 8vw;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    color: #000;
+    transform: rotate(-12deg);
+    margin-bottom: 20px;
+}
+
+.mv .bg .hdline-wrap .pt-list {
     margin-left: -5%;
     margin-right: -5%;
-    li {
-        padding: 0.5em 0 0.5em 30px;
+}
+
+.mv .bg .hdline-wrap .pt-list li {
+    padding: 0.5em 0 0.5em 30px;
+    display: flex;
+    background-color: #e4a801;
+    background: linear-gradient(to top, #b98a36, #debb4e);
+    margin-top: 5px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInRight 1.2s ease-out both;
+}
+
+.mv .bg .hdline-wrap .pt-list li:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.mv .bg .hdline-wrap .pt-list li:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+.mv .bg .hdline-wrap .pt-list li:nth-of-type(2) p {
+    line-height: 1.1;
+    font-size: 1.8rem;
+}
+
+.mv .bg .hdline-wrap .pt-list li:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.mv .bg .hdline-wrap .pt-list li figure {
+    width: 70px;
+    margin-right: 18px;
+    transform: rotate(12deg);
+}
+
+.mv .bg .hdline-wrap .pt-list li p {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 1.25;
+}
+
+@media screen and (min-width: 500px) {
+    .mv .bg {
+        padding-bottom: 6vw;
+    }
+    .mv .bg .hdline-wrap {
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+    }
+    .mv .bg .hdline-wrap h2 {
+        margin-bottom: 30px;
+        font-size: 5.4rem;
+        padding-left: 5vw;
         display: flex;
-        background-color: c.$theme01Color;
-        background: linear-gradient(to top, #b98a36, #debb4e);
-        margin-top: 5px;
-        position: relative;
-
-        /* ======= アニメーションの追加 ======= */
-        opacity: 0; /* 初期状態は透明 */
-        /* forwards ではなく both にすることで、待機中のチラつきを防ぎます */
-        animation: fadeInRight 1.2s ease-out both;
-
-        /* 1つ目のリスト（すぐ表示） */
-        &:nth-of-type(1) {
-            animation-delay: 0s;
-        }
-
-        /* 2つ目のリスト（0.3秒遅れ） */
-        &:nth-of-type(2) {
-            animation-delay: 0.3s;
-            
-            p {
-                line-height: 1.1;
-                font-size: 1.8rem;
-            }
-        }
-
-        /* 3つ目のリスト（0.6秒遅れ） */
-        &:nth-of-type(3) {
-            animation-delay: 0.6s;
-        }
-        /* =================================== */
-
-        figure {
-            width: 70px;
-            margin-right: 18px;
-            transform: rotate(12deg);
-        }
-        p {
-            font-style: italic;
-            font-weight: 700;
-            font-size: 1.9rem;
-            line-height: 1.25;
-        }
+        flex-direction: column;
+        align-items: center;
+    }
+    .mv .bg .hdline-wrap .pt-list li {
+        padding: 0.6em 0 0.6em 30vw;
+        margin-top: 10px;
+    }
+    .mv .bg .hdline-wrap .pt-list li figure {
+        width: 100px;
+        margin-right: 24px;
+    }
+    .mv .bg .hdline-wrap .pt-list li p {
+        font-size: 2rem;
+        line-height: 1.75;
     }
 }
-        }
-    }   
-    
-    @media screen and (min-width: 500px) {
-        .bg {
-            padding-bottom: 6vw;
-            .hdline-wrap {
-                margin: 0 calc(50% - 50vw);
-                width: 100vw;                
-                h2 {
-                    margin-bottom: 30px;
-                    font-size: 5.4rem;
-                    padding-left: 5vw;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                .pt-list {
-                    li {
-                        padding: 0.6em 0 0.6em 30vw;
-                        margin-top: 10px;
-                        figure {
-                            width:100px;
-                            margin-right: 24px;
-                        }
-                        p {
-                            font-size: 2rem;
-                            line-height: 1.75;
-                        }
-                    }
-                }
-            }
-        }
-    }   
-    
-    @media screen and (min-width: 769px) {
-        .bg {
-            padding-bottom: 4vw;
-            
-            /* 削除: PC時の画像背景指定も不要になるため無効化 */
-            /* background: url(https://lounge-range.com/kyoto-kawaramachilp2/assets/img/minamihorie/bg-mv.jpg) no-repeat center top 70% / cover; */
-            
-            .hdline-wrap {
-                .sp {
-                    display: none;
-                }
-                .pc {
-                    display: block;
-                }
-                .pt-list {
-                    li {
-                        padding: 0.2em 0 0.2em 40vw;
-                        margin-top: 6px;
-                        &:nth-of-type(2) {
-                            padding: 0.3em 0 0.3em 40vw;
-                            figure {
-                                margin-top:5px;
-                            }
-                            p {
-                                line-height: 1.1;
-                            }
-                        }
-                        figure {
-                            width:80px;
-                            margin-right: 24px;
-                        }
-                        p {
-                            font-size: 1.8rem;
-                        }
-                    }
-                }
-            }
-        }
+
+@media screen and (min-width: 769px) {
+    .mv .bg {
+        padding-bottom: 4vw;
     }
-    
-    @media screen and (min-width: 1280px) {
-        .bg {
-            .hdline-wrap {                
-                h2 {
-                    margin-bottom: 10px;
-                }
-            }
-        }
+    .mv .bg .hdline-wrap .sp {
+        display: none;
     }
-    
-    @media screen and (min-width: 1367px) {
-        .bg {
-            .hdline-wrap {                
-                h2 {
-                    margin-bottom: 20px;
-                }
-            }
-        }
+    .mv .bg .hdline-wrap .pc {
+        display: block;
     }
-    
-    @media screen and (min-width: 1537px) {
-        .bg {
-            .hdline-wrap {        
-                .pt-list {
-                    li {
-                        padding: 0.3em 0 0.3em 45vw;
-                        margin-top: 10px;
-                        &:nth-of-type(2) {
-                            padding: 0.3em 0 0.3em 45vw;
-                        }
-                        figure {
-                            width:100px;
-                        }
-                        p {
-                            font-size: 2rem;
-                        }
-                    }
-                }
-            }
-        }
+    .mv .bg .hdline-wrap .pt-list li {
+        padding: 0.2em 0 0.2em 40vw;
+        margin-top: 6px;
+    }
+    .mv .bg .hdline-wrap .pt-list li:nth-of-type(2) {
+        padding: 0.3em 0 0.3em 40vw;
+    }
+    .mv .bg .hdline-wrap .pt-list li:nth-of-type(2) figure {
+        margin-top: 5px;
+    }
+    .mv .bg .hdline-wrap .pt-list li:nth-of-type(2) p {
+        line-height: 1.1;
+    }
+    .mv .bg .hdline-wrap .pt-list li figure {
+        width: 80px;
+        margin-right: 24px;
+    }
+    .mv .bg .hdline-wrap .pt-list li p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mv .bg .hdline-wrap h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .mv .bg .hdline-wrap h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1537px) {
+    .mv .bg .hdline-wrap .pt-list li {
+        padding: 0.3em 0 0.3em 45vw;
+        margin-top: 10px;
+    }
+    .mv .bg .hdline-wrap .pt-list li:nth-of-type(2) {
+        padding: 0.3em 0 0.3em 45vw;
+    }
+    .mv .bg .hdline-wrap .pt-list li figure {
+        width: 100px;
+    }
+    .mv .bg .hdline-wrap .pt-list li p {
+        font-size: 2rem;
     }
 }
 
@@ -1724,10 +1690,10 @@ mv
 
 .faq-item {
   border-bottom: 1px solid #e0e0e0;
+}
 
-  &:first-of-type {
-    border-top: 1px solid #e0e0e0;
-  }
+.faq-item:first-of-type {
+  border-top: 1px solid #e0e0e0;
 }
 
 .faq-q {
@@ -1741,16 +1707,18 @@ mv
   list-style: none;
   position: relative;
   transition: background-color 0.3s ease;
+}
 
-  &:hover {
-    background-color: #f9f9f9;
-  }
+.faq-q:hover {
+  background-color: #f9f9f9;
+}
 
-  &::-webkit-details-marker {
-    display: none;
-  }
+.faq-q::-webkit-details-marker {
+  display: none;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .faq-q {
     font-size: 15px;
     padding: 15px 5px;
   }
@@ -1774,37 +1742,33 @@ mv
   width: 16px;
   height: 16px;
   flex-shrink: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: #333;
-    transition: transform 0.3s ease;
-  }
-
-  &::before {
-    top: 7px;
-    left: 0;
-    width: 16px;
-    height: 2px;
-  }
-
-  &::after {
-    top: 0;
-    left: 7px;
-    width: 2px;
-    height: 16px;
-  }
 }
 
-details[open] {
-  .toggle-icon {
-    &::after {
-      transform: rotate(90deg);
-      opacity: 0;
-    }
-  }
+.toggle-icon::before,
+.toggle-icon::after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon::before {
+  top: 7px;
+  left: 0;
+  width: 16px;
+  height: 2px;
+}
+
+.toggle-icon::after {
+  top: 0;
+  left: 7px;
+  width: 2px;
+  height: 16px;
+}
+
+details[open] .toggle-icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
 }
 
 .faq-a {
@@ -1814,8 +1778,10 @@ details[open] {
   line-height: 1.6;
   font-size: 15px;
   animation: fadeIn 0.4s ease-in-out;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .faq-a {
     font-size: 14px;
     padding: 0 5px 20px 5px;
   }
@@ -1845,9 +1811,9 @@ details[open] {
   }
 }
 
-// （元コードの中でPC用がなく、スマホ用にのみ指定されていたクラスです）
-.faq-title {
-  @media screen and (max-width: 768px) {
+/* （元コードの中でPC用がなく、スマホ用にのみ指定されていたクラスです） */
+@media screen and (max-width: 768px) {
+  .faq-title {
     font-size: 24px;
   }
 }
