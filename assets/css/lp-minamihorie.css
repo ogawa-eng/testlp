@@ -1589,10 +1589,10 @@ mv
   position: relative;
 }
 
-.voice .vc-list li:nth-of-type(1).is-active { animation-delay: 0s; }
-.voice .vc-list li:nth-of-type(2).is-active { animation-delay: 0.15s; }
-.voice .vc-list li:nth-of-type(3).is-active { animation-delay: 0.3s; }
-.voice .vc-list li:nth-of-type(4).is-active { animation-delay: 0.45s; }
+.voice .vc-list li:nth-of-type(1).is-active { animation-delay: 0.5s; }
+.voice .vc-list li:nth-of-type(2).is-active { animation-delay: 1.5s; }
+.voice .vc-list li:nth-of-type(3).is-active { animation-delay: 3.0s; }
+.voice .vc-list li:nth-of-type(4).is-active { animation-delay: 5.0s; }
 
 .voice .vc-list li:not(:last-of-type) {
   margin-bottom: 15px;
